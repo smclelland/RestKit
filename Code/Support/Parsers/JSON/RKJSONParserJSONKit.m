@@ -26,7 +26,7 @@
 @implementation RKJSONParserJSONKit
 
 - (NSDictionary*)objectFromString:(NSString*)string error:(NSError**)error {
-    return [string objectFromJSONStringWithParseOptions:JKParseOptionStrict error:error];
+    return [string objectFromJSONStringWithParseOptions:JKParseOptionLooseUnicode error:error];
 }
 
 - (NSString*)stringFromObject:(id)object error:(NSError**)error {
